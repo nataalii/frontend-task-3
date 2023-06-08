@@ -1,0 +1,733 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.02cm;
+
+}
+.navbar > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    width: 90%;
+    margin: auto;
+}
+hr{
+    background-color: #4BA87D;
+    color: #4BA87D;
+    height: 3px;
+    border: none;
+    margin-bottom: 0px;
+ }
+
+.nav-list{
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.nav-list > li:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.nav-list > li > a{
+    padding: 0 10px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-list{
+        display: flex;
+        align-items: end;
+        font-size: 11px;
+        font-weight: 700;
+        gap: 13px;
+
+    }
+    button{
+        padding: 7px 15px;
+        font-size: 12px;
+    }
+    nav img{
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 780px) {
+    nav img{
+        width: 110px;
+    }
+
+    .nav-list li:not(:last-child) {
+        display: none;
+      }
+    
+  }
+/* main section */
+.main-section{
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-section > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    width: 90%;
+}
+
+.container-content{
+    margin-right: -100px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.grl-laptop-img {
+    z-index: 8;
+}
+.container-content > h1 {
+    font-size: 59px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 71px;
+}
+.container-content > p {
+    width: 500px;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.button-wrapper{
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+.button-wrapper > button {
+    padding: 20px 48px;
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.button-wrapper > button:nth-child(2) {
+    background-color: white;
+    color: #4BA87D;
+    border: 2px solid #4BA87D;
+} 
+.grl-laptop-img{
+    box-shadow: 0px 1px 32px -8px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 1px 32px -8px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 1px 32px -8px rgba(0,0,0,0.57);
+}
+.container-content-mobile, .mobile-heading{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .main-section img{
+        max-width: 700px;
+        width: 70%;
+    }
+    .container-content > h1 {
+        line-height: 37px;
+        font-size: 38px;
+    }
+    .container-content > p {
+        font-size: 12px;
+        width: 340px;
+    }
+    .button-wrapper{
+        width: 280px;
+    }
+    .button-wrapper > button {
+        padding: 10px 28px;
+        font-size: 12px;
+    }
+    .elipse1, .elipse11, .elipse5, .rectangle1, .rectangle3, .rectangle9, .rectangle41{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 780px) {
+    .main-section{
+        padding: 10px 0;
+    }
+    .main-section .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-section .container-content{
+        display: none;
+    }
+    .main-section img {
+        width: 100%;
+    }
+
+    .mobile-heading{
+        display: block;
+        font-size: 36px;
+        font-family: 'Playfair Display', serif;
+        font-weight: 900;
+        margin-bottom: -90px;
+        line-height: 40px;
+        width: 100%;
+        z-index: 20;
+    }
+    .container-content-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .button-wrapper{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .button-wrapper > button {
+        padding: 10px 15px;
+        width: 48%;
+    }
+}
+
+.elipse11{
+    position: absolute;
+    bottom: 50px;
+    z-index: 40;
+    width: 10px;
+    height: 10px;
+}
+.rectangle41{
+    position: absolute;
+    left: 200px;
+    bottom: 20px;
+    z-index: 40;
+    width: 50px;
+    height: 50px;
+}
+.rectangle9{
+    position: absolute;
+    right: 400px;
+    top: 30px;
+    width: 35px;
+    height: 35px;
+}
+.rectangle3{
+    position: absolute;
+    right: 200px;
+    top: 75px;
+    width: 60px;
+    height: 60px;
+}
+.rectangle1{
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+}
+.elipse1{
+    position: absolute;
+    right: 750px;
+    top: 70px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+}
+
+
+/* customers section */
+.customers-section{
+    background-image: url(../images/slash_black.png);
+    background-repeat: no-repeat;
+    background-color:  #F7F7F7;
+    padding: 300px 0;
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    width: 1100px;
+}
+
+.customers-section-content > img{
+    position: absolute;
+    z-index: 10;
+    width: 90%;
+}
+.customers-section-content > h1{
+    font-size: 59px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    z-index: 20;
+}
+
+.customers-section-content > button{
+    padding: 20px 32px;
+    font-size: 31px;
+    color:#4BA87D;
+    background-color: white;
+    z-index: 20;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .customers-section{
+        padding: 230px 0;
+     }
+    .customers-section-content > h1{
+        font-size: 38px;
+    }
+    
+    .customers-section-content > button{
+        font-size: 13px;
+    }
+
+    .slash-img{
+        position: absolute;
+        left: -70px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .customers-section{
+        padding: 200px 0;
+     }
+    .customers-section-content{
+        gap: 30px;
+    }
+
+    .customers-section-content > h1{
+        font-size: 22px;
+    }
+    
+    .customers-section-content > button{
+        font-size: 6px;
+        padding: 10px 20px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .customers-section{
+        padding: 150px 0;
+     }
+}
+@media only screen and (max-width: 400px) {
+    .customers-section{
+        padding: 100px 0;
+     }
+}
+
+/* .email-campaign-section{
+    width: 100%;
+    position: relative;
+    margin-top: -200px;
+    padding: 300px 0; 
+    background: url('../images/slanted_green.png') no-repeat center center/cover ;
+} */
+
+.email-campaign-section {
+    background-color: #CAEAC7;
+    background-image: url(../images/slanted_green.png);
+    background-repeat: no-repeat;
+}
+
+.email-campaign-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 50px;
+
+}
+
+.email-campaign-section .container .cards {
+    min-height: 550px;
+    display: flex;
+    gap: 50px;
+    background-color: beige;
+}
+
+.email-campaign-section .card {
+    max-width: 360px;
+    min-width: 260px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.6);
+}
+
+.email-campaign-section .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.email-campaign-section .card .texts {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.email-campaign-section .card .texts p {
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.email-campaign-section .card1 {
+    margin-bottom: auto;
+}
+
+.email-campaign-section .card2 {
+    margin-top: auto;
+}
+
+.email-campaign-section .container .heading {
+    margin: 25px;
+}
+
+.email-campaign-section .container .heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin: 30px 0;
+}
+
+.email-campaign-section .container .heading p {
+    font-family: "Raleway", serif;
+    max-width: 335px;
+    width: 100%;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.email-campaign-section a{
+    color: #4BA87D;
+}
+@media only screen and (max-width: 1024px) {
+    .email-campaign-section .card .texts p, .email-campaign-section .container .heading p  {
+        line-height: 15px;
+        font-size: 12px;
+    }
+    .email-campaign-section .container .heading h2{
+        font-size: 28px;
+    }
+}
+/* news section */
+.news-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.news-section .container{
+    padding: 50px 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-section .cards{
+    display: flex;
+    gap: 32px;
+    padding: 0 50px;
+}
+
+.news-section .card-item{
+    text-align: start;
+    position: relative;
+}
+
+.news-section .card-item-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.news-section .card-item-text >h3{
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.news-section .card-item-text > h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.news-section .card-image{
+    max-width: 400px;
+    width: 100%;
+}
+.news-section .container > h2 {
+    font-size: 44px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 50px;
+    max-width: 800px;
+}
+.news-section .enter-email-container{
+    display: flex;
+    flex-direction: column;
+}
+.news-section .enter-email-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.news-section button {
+    padding: 14px 21px;
+
+}
+input{
+    padding: 14px 120px 14px 21px;
+    border: 1px solid #c5c5c5;
+    outline: none;
+    font-size: 17px;
+}
+
+input::placeholder{
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+.news-section p{
+    margin: 20px;
+    text-align: start;
+    color:#4BA87D;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    gap: 65px;
+}
+.brand-logo{
+    width: 120px;
+}
+.brand-logo-2{
+    width: 90px;
+}
+@media only screen and (max-width: 1024px) {
+    .news-section .container h2:nth-child(2) {
+        font-size: 28px;
+        margin-top: 40px;
+        line-height: 36px;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    .news-section .container h2:nth-child(4) {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .news-section .container {
+        gap: 30px;
+    }
+    .news-section .card-item-text > h3{
+        font-size: 22px;
+    }
+    .news-section .card-item-text > h4{
+        font-size: 12px;
+    }
+    input{
+        padding: 14px 60px 14px 21px;
+    }
+    .brand-logo{
+        width: 100px;
+    }
+    .brand-logo-2{
+        width: 70px;
+    }
+
+  }
+
+  @media only screen and (max-width: 680px) {
+    .news-section .container h2 {
+        font-size: 24px;
+    }
+    .news-section .cards{
+        flex-direction: column;
+    }
+    .news-section .enter-email-container{
+        align-items: center;
+    }
+    .news-section .enter-email-text{
+        flex-direction: column;    
+    }
+    input{
+        padding: 14px 0px 14px 21px;
+    }
+    
+  }
+
+/* plans section */
+.plan-section{
+    background-color: #4BA87D;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.plan-section h1 {
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    z-index: 20;
+}
+
+.plan-section button {
+    background-color: white;
+    color: #4BA87D;
+    padding: 20px 30px;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .plan-section h1 {
+        font-size: 45px;
+    }
+
+    .plan-section button {
+        padding: 15px 25px;
+        font-weight: 900;
+        font-size: 14px;
+    }
+    
+  }
+/* footer */
+
+footer .container {
+    padding: 50px 0;
+}
+
+footer .container .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+footer .container .top .content {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 30px;
+}
+footer .left-content, footer .right-content {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    gap: 30px;
+
+}
+footer .container .top .content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+footer .container .top .content ul li {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: start;
+    cursor: pointer;
+}
+
+footer hr{
+    background-color: #DBDBDB;
+    height: 2px;
+    border: none;
+    width: 85%;
+ }
+
+footer .container .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 85%;
+    margin: auto;
+    padding-top: 50px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    footer .container .top .content ul li{
+        font-size: 12px;
+        margin-bottom: 0px;
+
+    }
+    .ninjamail-logo{
+        max-width: 120px;
+    }
+    footer .container .bottom {
+        font-size: 12px;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+    footer .container .bottom span{
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    footer .container .top {
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer .left-content, footer .right-content{
+        flex-direction: column;
+        gap: 0px;
+
+    }
+    footer .container .top .content {
+        width: auto;
+    }
+    
+
+}
