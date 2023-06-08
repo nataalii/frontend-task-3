@@ -340,18 +340,13 @@ button{
      }
 }
 
-/* .email-campaign-section{
+.email-campaign-section{
     width: 100%;
     position: relative;
-    margin-top: -200px;
+    margin-top: -300px;
     padding: 300px 0; 
-    background: url('../images/slanted_green.png') no-repeat center center/cover ;
-} */
-
-.email-campaign-section {
-    background-color: #CAEAC7;
-    background-image: url(../images/slanted_green.png);
     background-repeat: no-repeat;
+    background: url('../images/slanted_green.png') no-repeat center center/cover ;
 }
 
 .email-campaign-section .container {
@@ -366,14 +361,13 @@ button{
 .email-campaign-section .container .cards {
     min-height: 550px;
     display: flex;
-    gap: 50px;
-    background-color: beige;
+    gap: 30px;
 }
 
 .email-campaign-section .card {
     max-width: 360px;
-    min-width: 260px;
-    width: 100%;
+    min-width: 200px;
+    width: 90%;
     background-color: #fff;
     position: relative;
     box-shadow: 0 0 30px -15px rgba(0, 0, 0, 0.6);
@@ -381,7 +375,7 @@ button{
 
 .email-campaign-section .card img {
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .email-campaign-section .card .texts {
@@ -405,12 +399,12 @@ button{
 }
 
 .email-campaign-section .container .heading {
-    margin: 25px;
+    margin: 20px;
 }
 
 .email-campaign-section .container .heading h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 900;
     margin: 30px 0;
 }
@@ -418,7 +412,7 @@ button{
 .email-campaign-section .container .heading p {
     font-family: "Raleway", serif;
     max-width: 335px;
-    width: 100%;
+    width: 110%;
     line-height: 30px;
     font-weight: 500;
     font-size: 18px;
@@ -432,8 +426,23 @@ button{
         font-size: 12px;
     }
     .email-campaign-section .container .heading h2{
-        font-size: 28px;
+        font-size: 26px;
     }
+}
+@media only screen and (max-width: 780px) {
+    .email-campaign-section .container {
+        flex-direction: column;
+    }
+    .email-campaign-section .container .cards {
+       flex-direction: column;
+    }
+    .email-campaign-section .card1 {
+        margin-left: -30px;
+    }
+    
+    .email-campaign-section .card2 {
+        transform: translate(30px, 0px);
+        }
 }
 /* news section */
 .news-section{
@@ -441,6 +450,7 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: -150px;
 }
 
 .news-section .container{
@@ -573,6 +583,9 @@ input::placeholder{
   }
 
   @media only screen and (max-width: 680px) {
+    .news-section{
+        margin-top: -300px;
+    }
     .news-section .container h2 {
         font-size: 24px;
     }
@@ -588,6 +601,7 @@ input::placeholder{
     input{
         padding: 14px 0px 14px 21px;
     }
+    
     
   }
 
